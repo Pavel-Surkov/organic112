@@ -3,12 +3,17 @@
 // -----------------------------------------------------------------------------
 
 // Base
-$font: 'SourceSansPro', sans-serif;
-$links-font: 'SourceSerifPro' serif;
+$font: 'SourceSerifPro', Arial, serif;
+$links-font: 'SourceSansPro', Arial, sans-serif;
 $base-font-size: 16px;
 $base-path: '../';
 
 // Colors
 $white: #fff;
 $black: #000;
+$gray-200: #a0a0a0;
+$gray-700: #707070;
+$gray-600: #666;
 $dark-300: #333;
+$green-600: #018d3c;
+$red-300: #de1921;

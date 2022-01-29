@@ -1,0 +1,25 @@
+.home-main {
+	&__slide {
+		position: relative;
+		&-first {
+			background: linear-gradient(rgba($black, 0.07)), image('home-main-slide.jpg') no-repeat 50% / cover;
+			& .slide-text {
+				padding: 98px 0;
+				padding-bottom: 180px;
+				max-width: 422px;
+				margin-left: auto;
+				margin-right: 48px;
+			}
+			& img:first-child {
+				position: absolute;
+				bottom: 38px;
+				left: 129px;
+			}
+		}
+	}
+	&__swiper {
+		& .swiper-pagination {
+			bottom: 39px;
+		}
+	}
+}

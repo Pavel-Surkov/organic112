@@ -1,0 +1,9 @@
+.title {
+	margin: 0;
+	font-weight: 400;
+	&_size {
+		&-l {
+			@include font(4rem, calc(50 / 40));
+		}
+	}
+}

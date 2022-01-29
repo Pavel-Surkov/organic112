@@ -1,0 +1,17 @@
+.btn {
+	font-family: $links-font;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	@include font(1.6rem, calc(26 / 16));
+	font-weight: 600;
+	color: $dark-300;
+	border: 2px solid $red-300;
+	padding: 1.0625em 3.125em 0.9375em 3.125em;
+	&:hover {
+		background: $red-300;
+		color: $white;
+	}
+	&:active {
+		opacity: 0.8;
+	}
+}

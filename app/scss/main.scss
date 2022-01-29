@@ -91,7 +91,8 @@ $utilities: map-get-multiple(
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button', 'components/link';
+@import 'components/swiper-cdn', 'components/button', 'components/title', 'components/link', 'components/home-main',
+	'components/slide', 'components/swiper', 'components/home-catalog';
 
 // 6. Page-specific styles
 @import 'pages/home';

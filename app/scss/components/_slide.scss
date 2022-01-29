@@ -1,0 +1,15 @@
+.slide {
+	&-text {
+		position: relative;
+		&__title {
+			margin-bottom: 8px;
+		}
+		&__subtitle {
+			display: block;
+			font-style: italic;
+			color: $gray-600;
+			margin-bottom: 71px;
+			@include font(2rem, calc(24 / 20));
+		}
+	}
+}
