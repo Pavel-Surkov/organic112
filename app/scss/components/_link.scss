@@ -1,0 +1,6 @@
+.link {
+	font-family: $links-font;
+	@include font(1.6, 20);
+	text-decoration: none;
+	color: $dark-300;
+}

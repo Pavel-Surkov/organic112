@@ -1,0 +1,23 @@
+.header {
+	&-wrapper {
+		padding: 25px 0;
+		padding-bottom: 29px;
+	}
+	&-content {
+		@include flex(row, flex-end, space-between);
+	}
+	&-navigation {
+		&__list {
+			margin: 0;
+			list-style: none;
+			@include flex();
+		}
+		&__item {
+			text-transform: uppercase;
+			margin-right: 40px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
