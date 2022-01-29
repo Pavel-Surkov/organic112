@@ -5,5 +5,8 @@
 		&-l {
 			@include font(4rem, calc(50 / 40));
 		}
+		&-m {
+			@include font(3.2rem, calc(44 / 32));
+		}
 	}
 }

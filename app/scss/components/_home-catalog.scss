@@ -2,4 +2,36 @@
 	&__wrapper {
 		padding-top: 58px;
 	}
+	&__top {
+		@include flex(row, center, space-between);
+		margin-bottom: 36px;
+	}
+	&__prev {
+		margin-right: 30px;
+	}
+	&__item {
+		& img {
+			margin-bottom: 21px;
+		}
+		& p {
+			margin: 0;
+			text-align: center;
+			@include font(1.6rem, calc(24 / 16));
+			font-style: italic;
+			color: $gray-600;
+		}
+		&-title {
+			margin-bottom: 2px;
+			text-align: center;
+			@include font(1.8rem, calc(26 / 18));
+		}
+	}
+	&__btn {
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+		&-wrapper {
+			margin-top: 42px;
+			text-align: center;
+		}
+	}
 }

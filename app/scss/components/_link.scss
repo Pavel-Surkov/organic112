@@ -3,4 +3,24 @@
 	@include font(1.6rem, calc(20 / 16));
 	text-decoration: none;
 	color: $dark-300;
+	&-arrow {
+		display: inline-block;
+		font-family: $links-font;
+		position: relative;
+		padding-right: 38px;
+		@include font(1.6rem, calc(22 / 16));
+		color: $green-500;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 6px;
+			width: 28px;
+			height: 13px;
+			background: icon('green-arrow.svg') no-repeat 50% / cover;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 }

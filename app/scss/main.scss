@@ -92,7 +92,7 @@ $utilities: map-get-multiple(
 
 // 5. Components
 @import 'components/swiper-cdn', 'components/button', 'components/title', 'components/link', 'components/home-main',
-	'components/slide', 'components/swiper', 'components/home-catalog';
+	'components/slide', 'components/swiper', 'components/home-catalog', 'components/secrets';
 
 // 6. Page-specific styles
 @import 'pages/home';

@@ -2,7 +2,7 @@
 	&-wrapper {
 		padding: 25px 0;
 		padding-bottom: 29px;
-		// border-bottom: 1px solid rgba($gray-700, 0.3);
+		border-bottom: 1px solid rgba($gray-700, 0.3);
 	}
 	&-content {
 		@include flex(row, flex-end, space-between);
@@ -26,5 +26,11 @@
 				}
 			}
 		}
+	}
+}
+
+.home-header {
+	& .header-wrapper {
+		border: none;
 	}
 }
