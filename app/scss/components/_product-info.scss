@@ -1,0 +1,21 @@
+.product-info {
+	& .container {
+		padding: 50px 0;
+		border-top: 1px solid rgba($gray-700, 0.3);
+	}
+	&__title {
+		margin-bottom: 15px;
+	}
+	&__block {
+		& p {
+			max-width: 528px;
+			font-family: $links-font;
+			@include font(1.6rem, calc(24 / 16));
+			margin: 0;
+			margin-bottom: 24px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

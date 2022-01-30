@@ -1,0 +1,14 @@
+.product-additional {
+	& .container {
+		padding: 45px 0;
+		padding-bottom: 48px;
+		border-top: 1px solid rgba($gray-700, 0.3);
+	}
+	&__block {
+		& p {
+			margin: 0;
+			font-family: $links-font;
+			@include font(1.6rem, calc(24 / 16));
+		}
+	}
+}

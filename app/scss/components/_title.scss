@@ -1,12 +1,16 @@
 .title {
 	margin: 0;
 	font-weight: 400;
+	color: $dark-300;
 	&_size {
 		&-l {
 			@include font(4rem, calc(50 / 40));
 		}
 		&-m {
 			@include font(3.2rem, calc(44 / 32));
+		}
+		&-s {
+			@include font(2.8rem, calc(40 / 28));
 		}
 	}
 }
