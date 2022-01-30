@@ -4704,14 +4704,16 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       display: inline-block;
       margin-bottom: 25px;
       font-style: italic;
+      font-size: 1.8rem;
+      line-height: calc(28 / 18);
       color: #666; }
     .product-block__info p {
       font-family: "SourceSansPro", Arial, sans-serif;
       color: #333;
       margin: 0;
       margin-bottom: 30px;
-      font-size: 1.6rem;
-      line-height: calc(28 / 16); }
+      font-size: 1.8rem;
+      line-height: calc(28 / 18); }
       .product-block__info p:last-child {
         margin-bottom: 0; }
 

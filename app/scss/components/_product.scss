@@ -50,6 +50,7 @@
 				display: inline-block;
 				margin-bottom: 25px;
 				font-style: italic;
+				@include font(1.8rem, calc(28 / 18));
 				color: $gray-600;
 			}
 			& p {
@@ -57,7 +58,7 @@
 				color: $dark-300;
 				margin: 0;
 				margin-bottom: 30px;
-				@include font(1.6rem, calc(28 / 16));
+				@include font(1.8rem, calc(28 / 18));
 				&:last-child {
 					margin-bottom: 0;
 				}
