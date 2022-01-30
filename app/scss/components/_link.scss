@@ -3,6 +3,18 @@
 	@include font(1.6rem, calc(20 / 16));
 	text-decoration: none;
 	color: $dark-300;
+	&:hover {
+		opacity: 0.8;
+	}
+	&-green {
+		color: $green-600;
+		font-family: $links-font;
+		@include font(1.6rem, calc(24 / 16));
+		text-decoration: none;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
 	&-arrow {
 		display: inline-block;
 		font-family: $links-font;

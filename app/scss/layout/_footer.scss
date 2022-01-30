@@ -1,0 +1,76 @@
+.footer {
+	font-family: $links-font;
+	&-wrapper {
+		padding-top: 50px;
+		padding-bottom: 58px;
+		border-top: 1px solid rgba($gray-700, 0.3);
+	}
+	&__note {
+		& p {
+			margin: 0;
+			@include font(1.6rem, calc(24 / 16));
+			color: $gray-700;
+		}
+		& p:nth-child(2) {
+			margin-bottom: 24px;
+		}
+	}
+	&-navigation {
+		&__list {
+			margin: 0;
+			list-style: none;
+			padding: 0;
+		}
+		&__item {
+			margin-bottom: 13px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& a {
+				color: $dark-300;
+				@include font(1.6rem, calc(20 / 16));
+			}
+		}
+	}
+	&-social {
+		@include flex(column);
+		&__wrapper {
+			@include flex(row, flex-start, flex-end);
+		}
+		& p {
+			margin: 0;
+			margin-bottom: 8px;
+		}
+		&__icons {
+			@include flex();
+		}
+		&__icon {
+			margin-right: 19px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&-bottom {
+		padding-top: 25px;
+	}
+	&-organic,
+	&-logic {
+		& p {
+			margin: 0;
+			color: $gray-700;
+			@include font(1.6rem, calc(22 / 16));
+		}
+	}
+	&-logic p {
+		text-align: right;
+	}
+}
+
+.home-footer {
+	& .footer-wrapper {
+		padding-top: 65px;
+		padding-bottom: 56px;
+		border: none;
+	}
+}
