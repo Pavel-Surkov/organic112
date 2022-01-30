@@ -1,0 +1,52 @@
+.contacts {
+	&-info {
+		&__wrapper {
+			padding: 8px 0;
+			padding-bottom: 82px;
+		}
+		&__block {
+			& p {
+				max-width: 360px;
+				font-family: $links-font;
+				@include font(1.8rem, calc(28 / 18));
+				margin: 0;
+				margin-bottom: 28px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	&-block {
+		&__title {
+			margin-bottom: 22px;
+		}
+	}
+	&-form {
+		&__item {
+			display: block;
+			width: 100%;
+			font-family: $links-font;
+			color: $dark-300;
+			@include font(1.8rem, calc(30 / 18));
+			border-bottom: 1px solid $green-600;
+			padding: 0;
+			padding-bottom: 12px;
+			margin-top: 25px;
+			&:first-child {
+				margin-top: 0;
+			}
+			&::placeholder {
+				color: $gray-900;
+			}
+		}
+		&__submit {
+			margin-top: 50px;
+		}
+	}
+	&-map {
+		&__wrapper {
+			max-height: 550px;
+		}
+	}
+}
