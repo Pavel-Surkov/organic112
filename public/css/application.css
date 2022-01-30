@@ -4484,7 +4484,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 .slide-text {
   position: relative; }
   .slide-text__title {
-    margin-bottom: 8px; }
+    margin-bottom: 12px; }
   .slide-text__subtitle {
     display: block;
     font-style: italic;
@@ -4835,3 +4835,6 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .contacts-map__wrapper {
   max-height: 550px; }
+
+.contacts-map iframe {
+  border: none; }

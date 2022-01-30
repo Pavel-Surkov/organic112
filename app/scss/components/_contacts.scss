@@ -48,5 +48,8 @@
 		&__wrapper {
 			max-height: 550px;
 		}
+		& iframe {
+			border: none;
+		}
 	}
 }
