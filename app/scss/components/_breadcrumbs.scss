@@ -1,0 +1,21 @@
+.breadcrumbs {
+	padding-top: 33px;
+	font-family: $links-font;
+	&-item {
+		&::after {
+			content: '|';
+			color: $gray-700;
+		}
+		& a {
+			color: $dark-300;
+		}
+		&_last {
+			&::after {
+				content: none;
+			}
+			& span {
+				color: $gray-700;
+			}
+		}
+	}
+}

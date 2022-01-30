@@ -1,0 +1,49 @@
+.catalog {
+	&-wrapper {
+		padding-top: 8px;
+		padding-bottom: 50px;
+		& .catalog-item {
+			padding-top: 10px;
+		}
+	}
+	&-title {
+		margin-bottom: 36px;
+	}
+	& .col-12 {
+		margin-bottom: 57px;
+		&:last-child,
+		&:nth-last-child(2),
+		&:nth-last-child(3) {
+			margin-bottom: 0;
+		}
+	}
+	&-item {
+		&__link {
+			overflow: hidden;
+			& img {
+				margin-bottom: 21px;
+				transition: transform 0.3s;
+			}
+			&:hover {
+				& .catalog-item__title {
+					color: $green-600;
+				}
+				& img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		& p {
+			margin: 0;
+			text-align: center;
+			@include font(1.6rem, calc(24 / 16));
+			font-style: italic;
+			color: $gray-600;
+		}
+		&__title {
+			margin-bottom: 2px;
+			text-align: center;
+			@include font(1.8rem, calc(26 / 18));
+		}
+	}
+}

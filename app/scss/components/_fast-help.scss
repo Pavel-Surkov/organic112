@@ -1,0 +1,16 @@
+.fast-help {
+	padding: 54px 42px 54px 70px;
+	background: $light-200;
+	&__subtitle {
+		display: inline-block;
+		font-style: italic;
+		color: $gray-600;
+		margin-bottom: 16px;
+	}
+	& p {
+		margin: 0;
+		font-family: $links-font;
+		@include font(1.8rem, calc(28 / 18));
+		color: $dark-400;
+	}
+}
