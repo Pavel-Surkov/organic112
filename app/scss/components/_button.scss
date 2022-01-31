@@ -3,11 +3,11 @@
 	font-family: $links-font;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
-	@include font(1.6rem, calc(26 / 16));
-	font-weight: 600;
+	@include font(1.5rem, calc(26 / 15));
+	font-weight: 400;
 	color: $dark-300;
 	border: 2px solid $red-300;
-	padding: 0.9375em 3.125em 0.875em 3.125em;
+	padding: 1em 3.5em 0.9333em 3.5em;
 	&:hover {
 		background: $red-300;
 		color: $white;

@@ -1,11 +1,15 @@
 .fast-help {
 	padding: 54px 42px 54px 70px;
 	background: $light-200;
+	&__title {
+		margin-bottom: -6px;
+	}
 	&__subtitle {
+		@include font(1.8rem, calc(24 / 18));
 		display: inline-block;
 		font-style: italic;
 		color: $gray-600;
-		margin-bottom: 16px;
+		margin-bottom: 12px;
 	}
 	& p {
 		margin: 0;

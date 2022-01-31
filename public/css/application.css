@@ -4395,12 +4395,12 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   font-family: "SourceSansPro", sans-serif;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: 1.6rem;
-  line-height: calc(26 / 16);
-  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: calc(26 / 15);
+  font-weight: 400;
   color: #333;
   border: 2px solid #de1921;
-  padding: 0.9375em 3.125em 0.875em 3.125em; }
+  padding: 1em 3.5em 0.9333em 3.5em; }
   .btn:hover {
     background: #de1921;
     color: #fff; }
@@ -4454,7 +4454,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       content: '';
       position: absolute;
       right: 0;
-      top: 6px;
+      top: 5px;
       width: 28px;
       height: 13px;
       background: url("../img/icons/green-arrow.svg") no-repeat 50%/cover; }
@@ -4468,8 +4468,8 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     background: -o-linear-gradient(rgba(0, 0, 0, 0.07)), url("../img/home-main-slide.jpg") no-repeat 50%/cover;
     background: linear-gradient(rgba(0, 0, 0, 0.07)), url("../img/home-main-slide.jpg") no-repeat 50%/cover; }
     .home-main__slide-first .slide-text {
-      padding: 98px 0;
-      padding-bottom: 180px;
+      padding: 75px 0;
+      padding-bottom: 238px;
       max-width: 422px;
       margin-left: auto;
       margin-right: 48px; }
@@ -4611,6 +4611,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   color: #666; }
 
 .catalog-item__title {
+  font-family: "SourceSerifPro", serif;
   margin-bottom: 2px;
   text-align: center;
   font-size: 1.8rem;
@@ -4619,11 +4620,15 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 .fast-help {
   padding: 54px 42px 54px 70px;
   background: #faf7f7; }
+  .fast-help__title {
+    margin-bottom: -6px; }
   .fast-help__subtitle {
+    font-size: 1.8rem;
+    line-height: calc(24 / 18);
     display: inline-block;
     font-style: italic;
     color: #666;
-    margin-bottom: 16px; }
+    margin-bottom: 12px; }
   .fast-help p {
     margin: 0;
     font-family: "SourceSansPro", sans-serif;

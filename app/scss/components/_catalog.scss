@@ -41,6 +41,7 @@
 			color: $gray-600;
 		}
 		&__title {
+			font-family: $font;
 			margin-bottom: 2px;
 			text-align: center;
 			@include font(1.8rem, calc(26 / 18));
