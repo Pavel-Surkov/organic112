@@ -9,7 +9,7 @@
 		& p {
 			margin: 0;
 			@include font(1.6rem, calc(24 / 16));
-			color: $gray-700;
+			color: $dark-300;
 		}
 		& p:nth-child(2) {
 			margin-bottom: 24px;
@@ -29,6 +29,8 @@
 			& a {
 				color: $dark-300;
 				@include font(1.6rem, calc(20 / 16));
+				letter-spacing: 0.03em;
+				font-weight: 600;
 			}
 		}
 	}

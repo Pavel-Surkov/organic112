@@ -3,9 +3,9 @@
 // Swipers
 const initSwipers = () => {
 	const homeSwiperConfig = {
-		autoplay: {
-			delay: 3500
-		},
+		// autoplay: {
+		// 	delay: 3500
+		// },
 		pagination: {
 			el: '.home-main__swiper .swiper-pagination'
 		}
