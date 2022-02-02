@@ -39,8 +39,18 @@
 
 @media screen and (max-width: 991px) {
 	.link {
+		@include font(1.3rem, calc(20 / 13));
 		&-green {
 			@include font(1.3rem, calc(20 / 13));
+		}
+		&-arrow {
+			@include font(1.3rem, calc(20 / 13));
+			padding-right: 28px;
+			&::after {
+				top: 6px;
+				width: 18px;
+				height: 9px;
+			}
 		}
 	}
 }

@@ -4548,9 +4548,20 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       opacity: 0.8; }
 
 @media screen and (max-width: 991px) {
-  .link-green {
+  .link {
     font-size: 1.3rem;
-    line-height: calc(20 / 13); } }
+    line-height: calc(20 / 13); }
+    .link-green {
+      font-size: 1.3rem;
+      line-height: calc(20 / 13); }
+    .link-arrow {
+      font-size: 1.3rem;
+      line-height: calc(20 / 13);
+      padding-right: 28px; }
+      .link-arrow::after {
+        top: 6px;
+        width: 18px;
+        height: 9px; } }
 
 .home-main__slide {
   position: relative; }
@@ -4757,7 +4768,19 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   background: #faf7f7;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
 
 .secrets-text {
   padding: 60px 53px 62px 70px;
@@ -4773,6 +4796,49 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     color: #444; }
   .secrets-text .link-arrow {
     margin-top: 20px; }
+
+@media screen and (max-width: 991px) {
+  .secrets-wrapper {
+    padding-top: 36px; }
+  .secrets-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .secrets-img {
+    width: 100%; }
+    .secrets-img img {
+      width: 100%; }
+  .secrets-text {
+    max-width: none; }
+    .secrets-text__title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: 2rem;
+              flex-direction: 2rem;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: calc(28 / 20);
+          -ms-flex-align: calc(28 / 20);
+              align-items: calc(28 / 20);
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+      margin-bottom: 12px; }
+    .secrets-text p {
+      font-size: 1.3rem;
+      line-height: calc(20 / 13); } }
+
+@media screen and (max-width: 767px) {
+  .secrets-text {
+    padding: 31px 19px; }
+    .secrets-text__title {
+      max-width: 285px; }
+    .secrets-text .link-arrow {
+      margin-top: 12px; } }
 
 .breadcrumbs {
   padding-top: 33px;
