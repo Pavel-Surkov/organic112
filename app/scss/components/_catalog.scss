@@ -21,6 +21,7 @@
 		&__link {
 			overflow: hidden;
 			& img {
+				margin: 0 auto;
 				margin-bottom: 21px;
 				transition: transform 0.3s;
 			}
@@ -51,6 +52,11 @@
 		&-item {
 			& p {
 				@include font(1.2rem, calc(18 / 12));
+			}
+			&__link {
+				& img {
+					margin-bottom: 13px;
+				}
 			}
 		}
 	}

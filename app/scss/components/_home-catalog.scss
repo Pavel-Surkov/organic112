@@ -2,6 +2,13 @@
 	&__wrapper {
 		padding-top: 58px;
 	}
+	&__swiper {
+		& .swiper-pagination {
+			position: relative;
+			margin-top: 17px;
+			bottom: 0;
+		}
+	}
 	&__top {
 		@include flex(row, center, space-between);
 		margin-bottom: 36px;
@@ -39,6 +46,13 @@
 		}
 		&__wrapper {
 			padding-top: 23px;
+		}
+		&__btn {
+			padding-right: 2.8em;
+			padding-left: 2.8em;
+			&-wrapper {
+				margin-top: 28px;
+			}
 		}
 	}
 }

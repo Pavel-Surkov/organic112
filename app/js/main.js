@@ -3,20 +3,45 @@
 // Swipers
 const initSwipers = () => {
 	const homeSwiperConfig = {
-		// autoplay: {
-		// 	delay: 3500
-		// },
+		spaceBetween: 20,
+		autoplay: {
+			delay: 3500
+		},
 		pagination: {
 			el: '.home-main__swiper .swiper-pagination'
+		},
+		breakpoints: {
+			577: {
+				spaceBetween: 0
+			}
 		}
 	};
 
 	const homeCatalogSwiperConfig = {
-		slidesPerView: 4,
-		spaceBetween: 30,
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 20,
 		navigation: {
 			prevEl: '.home-catalog__prev',
 			nextEl: '.home-catalog__next'
+		},
+		pagination: {
+			el: '.home-catalog__swiper .swiper-pagination'
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				slidesPerGroup: 1
+			},
+			577: {
+				slidesPerView: 3,
+				slidesPerGroup: 3,
+				spaceBetween: 30,
+			},
+			350: {
+				slidesPerView: 2,
+				slidesPerGroup: 2,
+			}
 		}
 	};
 

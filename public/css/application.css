@@ -4433,6 +4433,13 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       background: #018d3c;
       color: #fff; }
 
+@media screen and (max-width: 991px) {
+  .btn {
+    font-size: 1.2rem;
+    line-height: calc(20 / 12);
+    padding-right: 2.8em;
+    padding-left: 2.8em; } }
+
 .title {
   margin: 0;
   font-weight: 400;
@@ -4592,15 +4599,20 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 @media screen and (max-width: 991px) {
   .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     margin: 0 4px !important; }
     .swiper-pagination-bullet-active {
-      width: 7px;
-      height: 7px; } }
+      width: 8px;
+      height: 8px; } }
 
 .home-catalog__wrapper {
   padding-top: 58px; }
+
+.home-catalog__swiper .swiper-pagination {
+  position: relative;
+  margin-top: 17px;
+  bottom: 0; }
 
 .home-catalog__top {
   display: -webkit-box;
@@ -4687,7 +4699,12 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   .home-catalog__top {
     margin-bottom: 12px; }
   .home-catalog__wrapper {
-    padding-top: 23px; } }
+    padding-top: 23px; }
+  .home-catalog__btn {
+    padding-right: 2.8em;
+    padding-left: 2.8em; }
+    .home-catalog__btn-wrapper {
+      margin-top: 28px; } }
 
 .secrets-wrapper {
   padding-top: 60px; }
@@ -4743,6 +4760,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 .catalog-item__link {
   overflow: hidden; }
   .catalog-item__link img {
+    margin: 0 auto;
     margin-bottom: 21px;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -4770,7 +4788,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 @media screen and (max-width: 991px) {
   .catalog-item p {
     font-size: 1.2rem;
-    line-height: calc(18 / 12); } }
+    line-height: calc(18 / 12); }
+  .catalog-item__link img {
+    margin-bottom: 13px; } }
 
 .fast-help {
   padding: 54px 42px 54px 70px;
