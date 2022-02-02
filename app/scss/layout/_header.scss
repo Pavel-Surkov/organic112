@@ -55,3 +55,30 @@
 		}
 	}
 }
+
+@media screen and (max-width: 576px) {
+	.header {
+		&-wrapper {
+			border: none;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: calc(100% - 30px);
+				height: 1px;
+				background: rgba($gray-700, 0.3);
+			}
+		}
+	}
+
+	.home-header {
+		& .header-wrapper {
+			&::after {
+				content: none;
+			}
+		}
+	}
+}

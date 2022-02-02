@@ -91,11 +91,11 @@ $utilities: map-get-multiple(
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/swiper-cdn', 'components/button', 'components/title', 'components/link', 'components/home-main',
-	'components/slide', 'components/swiper', 'components/home-catalog', 'components/secrets', 'components/breadcrumbs',
-	'components/catalog', 'components/fast-help', 'components/product', 'components/ingridients',
-	'components/product-info', 'components/product-additional', 'components/contacts', 'components/shops',
-	'components/m-menu';
+@import 'components/swiper-cdn', 'components/main', 'components/button', 'components/title', 'components/link',
+	'components/home-main', 'components/slide', 'components/swiper', 'components/home-catalog', 'components/secrets',
+	'components/breadcrumbs', 'components/catalog', 'components/fast-help', 'components/product',
+	'components/ingridients', 'components/product-info', 'components/product-additional', 'components/contacts',
+	'components/shops', 'components/m-menu';
 
 // 6. Page-specific styles
 @import 'pages/home';

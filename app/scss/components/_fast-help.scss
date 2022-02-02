@@ -18,3 +18,24 @@
 		color: $dark-400;
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.fast-help {
+		&__subtitle {
+			@include font(1.3rem, calc(20 / 13));
+			margin-bottom: 8px;
+		}
+		&__title {
+			margin-bottom: 0;
+		}
+		& p {
+			@include font(1.3rem, calc(20 / 13));
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.fast-help {
+		padding: 31px 19px;
+	}
+}
