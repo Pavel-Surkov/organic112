@@ -4845,3 +4845,45 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .contacts-map iframe {
   border: none; }
+
+.shops-wrapper {
+  padding: 8px 0;
+  padding-bottom: 85px; }
+
+.shops-title {
+  margin-bottom: 26px; }
+
+.shops-item {
+  text-align: center;
+  color: #333; }
+  .shops-item__logo {
+    border: 1px solid rgba(62, 138, 70, 0.26);
+    display: grid;
+    place-items: center;
+    min-height: 202px;
+    margin-bottom: 26px;
+    padding: 20px; }
+    .shops-item__logo img {
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .shops-item:hover .shops-item__logo {
+    border-color: rgba(62, 138, 70, 0.6); }
+  .shops-item__title {
+    font-size: 2rem;
+    line-height: calc(28 / 20);
+    font-weight: 700; }
+  .shops-item__link p {
+    font-size: 1.8rem;
+    line-height: calc(28 / 18);
+    margin: 0; }
+
+.shops .col-12 {
+  margin-bottom: 80px; }
+  .shops .col-12:last-child, .shops .col-12:nth-last-child(2), .shops .col-12:nth-last-child(3), .shops .col-12:nth-last-child(4) {
+    margin-bottom: 0; }
+
+@media screen and (max-width: 991px) {
+  .shops .col-12 {
+    margin-bottom: 50px; }
+    .shops .col-12:nth-last-child(3), .shops .col-12:nth-last-child(4) {
+      margin-bottom: 50px; } }

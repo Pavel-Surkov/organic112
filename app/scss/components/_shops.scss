@@ -1,0 +1,60 @@
+.shops {
+	&-wrapper {
+		padding: 8px 0;
+		padding-bottom: 85px;
+	}
+	&-title {
+		margin-bottom: 26px;
+	}
+	&-item {
+		text-align: center;
+		color: $dark-300;
+		&__logo {
+			border: 1px solid rgba($green-500, 0.26);
+			display: grid;
+			place-items: center;
+			min-height: 202px;
+			margin-bottom: 26px;
+			padding: 20px;
+			& img {
+				object-fit: contain;
+			}
+		}
+		&:hover {
+			& .shops-item__logo {
+				border-color: rgba($green-500, 0.6);
+			}
+		}
+		&__title {
+			@include font(2rem, calc(28 / 20));
+			font-weight: 700;
+		}
+		&__link {
+			& p {
+				@include font(1.8rem, calc(28 / 18));
+				margin: 0;
+			}
+		}
+	}
+	& .col-12 {
+		margin-bottom: 80px;
+		&:last-child,
+		&:nth-last-child(2),
+		&:nth-last-child(3),
+		&:nth-last-child(4) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.shops {
+		& .col-12 {
+			margin-bottom: 50px;
+			&:nth-last-child(3),
+			&:nth-last-child(4) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
