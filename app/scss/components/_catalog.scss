@@ -41,10 +41,17 @@
 			color: $gray-600;
 		}
 		&__title {
-			font-family: $font;
 			margin-bottom: 2px;
-			text-align: center;
-			@include font(1.8rem, calc(26 / 18));
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.catalog {
+		&-item {
+			& p {
+				@include font(1.2rem, calc(18 / 12));
+			}
 		}
 	}
 }

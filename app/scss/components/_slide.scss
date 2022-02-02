@@ -13,3 +13,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.slide {
+		&-text {
+			&__subtitle {
+				@include font(1.3rem, calc(18 / 13));
+				margin: 0;
+			}
+		}
+	}
+}

@@ -6,7 +6,6 @@
 	width: 100vw;
 	height: 100vh;
 	transform: translateX(100%);
-	transition: 0.4s;
 	background: $light-200;
 	font-family: $links-font;
 	overflow: scroll;
@@ -107,5 +106,11 @@
 				color: $dark-300;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.m-menu {
+		transition: 0.4s;
 	}
 }

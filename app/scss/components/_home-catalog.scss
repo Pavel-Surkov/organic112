@@ -6,8 +6,21 @@
 		@include flex(row, center, space-between);
 		margin-bottom: 36px;
 	}
+	&__navigation {
+		@include flex();
+	}
 	&__prev {
+		@include flex();
 		margin-right: 30px;
+		& svg {
+			max-height: 13px;
+		}
+	}
+	&__next {
+		@include flex();
+		& svg {
+			max-height: 13px;
+		}
 	}
 	&__btn {
 		padding-left: 2.5em;
@@ -15,6 +28,17 @@
 		&-wrapper {
 			margin-top: 42px;
 			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.home-catalog {
+		&__top {
+			margin-bottom: 12px;
+		}
+		&__wrapper {
+			padding-top: 23px;
 		}
 	}
 }

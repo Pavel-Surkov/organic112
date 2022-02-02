@@ -13,4 +13,30 @@
 			@include font(2.8rem, calc(40 / 28));
 		}
 	}
+	&_item {
+		font-family: $font;
+		text-align: center;
+		font-size: 1.8rem;
+		line-height: calc(26 / 18);
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.title {
+		&_size {
+			&-l {
+				@include font(1.8rem, calc(23 / 18));
+			}
+			&-m {
+				@include font(1.8rem, calc(26 / 18));
+			}
+			&-s {
+				@include font(2.8rem, calc(40 / 28));
+			}
+		}
+		&_item {
+			font-size: 1.3rem;
+			line-height: calc(19 / 13);
+		}
+	}
 }
