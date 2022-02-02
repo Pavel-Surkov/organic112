@@ -36,3 +36,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.link {
+		&-green {
+			@include font(1.3rem, calc(20 / 13));
+		}
+	}
+}

@@ -76,3 +76,63 @@
 		border: none;
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.footer {
+		&-wrapper {
+			padding: 31px 0;
+			padding-bottom: 34px;
+		}
+		&__note {
+			max-width: 150px;
+			& p {
+				@include font(1.3rem, calc(20 / 13));
+			}
+		}
+		&-navigation {
+			&__item {
+				margin-bottom: 12px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& a {
+					@include font(1.3rem, calc(16 / 13));
+				}
+			}
+		}
+		&-social {
+			&__wrapper {
+				margin-top: 27px;
+				justify-content: flex-start;
+			}
+			& p {
+				@include font(1.3rem, calc(20 / 13));
+			}
+			&__icon {
+				margin-right: 13px;
+				&:last-child {
+					margin-right: 0;
+				}
+				& svg {
+					max-width: 24px;
+				}
+			}
+		}
+		&-bottom {
+			padding-top: 22px;
+		}
+		&-logic,
+		&-organic {
+			& p {
+				text-align: left;
+				@include font(1.3rem, calc(18 / 13));
+			}
+		}
+	}
+
+	.home-footer {
+		& .footer-wrapper {
+			padding: 35px 0;
+		}
+	}
+}
