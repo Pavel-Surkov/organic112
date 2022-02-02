@@ -8,6 +8,7 @@
 		}
 		& a {
 			color: $dark-300;
+			@include font(1.6rem, calc(30 / 16));
 		}
 		&_last {
 			&::after {
@@ -15,6 +16,23 @@
 			}
 			& span {
 				color: $gray-700;
+				@include font(1.6rem, calc(30 / 16));
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.breadcrumbs {
+		padding-top: 20px;
+		&-item {
+			& a {
+				@include font(1.3rem, calc(20 / 13));
+			}
+			&_last {
+				& span {
+					@include font(1.3rem, calc(20 / 13));
+				}
 			}
 		}
 	}
