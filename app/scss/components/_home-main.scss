@@ -24,3 +24,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.home-main {
+		&__wrapper {
+			padding-top: 75px;
+		}
+	}
+}

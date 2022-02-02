@@ -5724,8 +5724,40 @@ const handleProductImg = () => {
 
 handleProductImg();
 
-// Functions after page load
+// Mobile menu handlers
+const handleMobileMenu = () => {
+	const menuBtnClose = document.querySelector('#m-menu__button_close');
+	const menuBtnOpen = document.querySelector('#m-menu__button_open');
 
+	const mobileMenuOpen = () => {
+		const menu = document.querySelector('.m-menu');
+		const htmlElement = document.documentElement;
+		
+		if (!menu.classList.contains('m-menu_open')) {
+			menu.classList.add('m-menu_open');
+			htmlElement.classList.add('is-locked');
+		}
+	};
+	
+	const mobileMenuClose = () => {
+		const menu = document.querySelector('.m-menu');
+		const htmlElement = document.documentElement;
+		
+		if (menu.classList.contains('m-menu_open')) {
+			menu.classList.remove('m-menu_open');
+			htmlElement.classList.remove('is-locked');
+		}
+	};
+
+	if (menuBtnClose && menuBtnOpen) {
+		menuBtnClose.addEventListener('click', mobileMenuClose);
+		menuBtnOpen.addEventListener('click', mobileMenuOpen);
+	}
+}
+
+handleMobileMenu();
+
+// Functions after page load
 document.addEventListener(`DOMContentLoaded`, () => {});
 
 // JQUERY

@@ -1,4 +1,5 @@
 .header {
+	background: $white;
 	&-wrapper {
 		padding: 25px 0;
 		padding-bottom: 29px;
@@ -33,5 +34,24 @@
 .home-header {
 	& .header-wrapper {
 		border: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header {
+		position: fixed;
+		top: 0;
+		width: 100vw;
+		z-index: 10;
+		&-wrapper {
+			padding: 15px 0;
+			padding-bottom: 19px;
+		}
+		&-logo {
+			& svg {
+				max-width: 76px;
+				max-height: 40px;
+			}
+		}
 	}
 }
