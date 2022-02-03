@@ -5331,7 +5331,17 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   .shops .col-12 {
     margin-bottom: 50px; }
     .shops .col-12:nth-last-child(3), .shops .col-12:nth-last-child(4) {
-      margin-bottom: 50px; } }
+      margin-bottom: 50px; }
+  .shops-wrapper {
+    padding-bottom: 40px; }
+  .shops-item__logo {
+    min-height: 150px; } }
+
+@media screen and (max-width: 767px) {
+  .shops .col-12 {
+    margin-bottom: 36px; }
+    .shops .col-12:nth-last-child(2), .shops .col-12:nth-last-child(3), .shops .col-12:nth-last-child(4) {
+      margin-bottom: 36px; } }
 
 .m-menu {
   position: fixed;
@@ -5515,7 +5525,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   .feedback .col-12:nth-last-child(3) {
     margin-bottom: 50px; }
   .feedback-title {
-    margin-bottom: 16px; } }
+    margin-bottom: 16px; }
+  .feedback-wrapper {
+    padding-bottom: 40px; } }
 
 @media screen and (max-width: 767px) {
   .feedback-item {

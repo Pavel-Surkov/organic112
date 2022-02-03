@@ -56,5 +56,26 @@
 				margin-bottom: 50px;
 			}
 		}
+		&-wrapper {
+			padding-bottom: 40px;
+		}
+		&-item {
+			&__logo {
+				min-height: 150px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.shops {
+		& .col-12 {
+			margin-bottom: 36px;
+			&:nth-last-child(2),
+			&:nth-last-child(3),
+			&:nth-last-child(4) {
+				margin-bottom: 36px;
+			}
+		}
 	}
 }
