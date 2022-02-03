@@ -95,10 +95,10 @@ $utilities: map-get-multiple(
 	'components/home-main', 'components/slide', 'components/swiper', 'components/home-catalog', 'components/secrets',
 	'components/breadcrumbs', 'components/catalog', 'components/fast-help', 'components/product',
 	'components/ingridients', 'components/product-info', 'components/product-additional', 'components/contacts',
-	'components/shops', 'components/m-menu', 'components/feedback';
+	'components/shops', 'components/m-menu', 'components/feedback', 'components/about-main', 'components/about-rules';
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/home', 'pages/about';
 
 // 7. Themes
 @import 'themes/default';

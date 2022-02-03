@@ -3539,6 +3539,13 @@ table {
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: 'SourceSerifPro';
+  src: url("../fonts/SourceSerifPro-Bold.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
 /**
  * Basic typography style for copy text
  */
@@ -5449,3 +5456,151 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     margin-bottom: 16px; }
     .feedback .col-12:nth-last-child(3), .feedback .col-12:nth-last-child(2) {
       margin-bottom: 16px; } }
+
+.about-main__wrapper {
+  padding: 8px 0;
+  padding-bottom: 70px; }
+
+.about-main__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  background: #faf7f7; }
+
+.about-main__text {
+  max-width: 51.28205%;
+  padding: 80px 41px;
+  padding-top: 147px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap; }
+  .about-main__text p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    line-height: calc(34 / 22); }
+
+.about-main__img {
+  height: inherit;
+  max-width: 48.7179487%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .about-main__img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.about-main__subtext p {
+  font-size: 1.8rem;
+  line-height: calc(28 / 18);
+  font-style: italic;
+  color: #707070; }
+
+@media screen and (max-width: 1243px) {
+  .about-main__text {
+    padding: 65px 40px; } }
+
+@media screen and (max-width: 991px) {
+  .about-main__wrapper {
+    padding-bottom: 40px; }
+  .about-main__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about-main__text, .about-main__img {
+    max-width: 100%; }
+  .about-main__img img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 767px) {
+  .about-main__text {
+    padding: 49px 24px; }
+    .about-main__text p {
+      font-size: 1.6rem;
+      line-height: calc(26 / 16);
+      margin-bottom: 19px; }
+  .about-main__subtext p {
+    font-size: 1.3rem;
+    line-height: calc(20 / 13); } }
+
+.about-rules__wrapper {
+  padding-bottom: 70px; }
+
+.about-rules__note p {
+  margin: 0;
+  font-size: 2.2rem;
+  line-height: calc(34 / 22);
+  max-width: 576px;
+  margin-bottom: 37px; }
+
+.about-rules__item-title {
+  font-size: 2.2rem;
+  line-height: calc(37 / 22);
+  color: #018d3c;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 11px; }
+
+.about-rules__item p {
+  margin: 0;
+  color: #707070;
+  font-family: "SourceSansPro", sans-serif;
+  font-size: 1.6rem;
+  line-height: calc(24 / 16); }
+
+@media screen and (max-width: 991px) {
+  .about-rules__wrapper {
+    padding-bottom: 38px; }
+  .about-rules__note p {
+    margin-bottom: 25px; }
+  .about-rules .col-12 {
+    margin-bottom: 25px; }
+    .about-rules .col-12:last-child {
+      margin-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .about-rules__note p {
+    font-size: 1.6rem;
+    line-height: calc(26 / 16); }
+  .about-rules__item-title {
+    margin-bottom: 7px;
+    font-size: 1.6rem;
+    line-height: calc(26 / 16); }
+  .about-rules__item p {
+    font-size: 1.3rem;
+    line-height: calc(20 / 13); } }
+
+.about-title {
+  margin-bottom: 26px; }
+
+@media screen and (max-width: 1243px) {
+  .about-title {
+    font-size: 2rem;
+    line-height: calc(26 / 20);
+    margin-bottom: 30px; } }

@@ -1,0 +1,14 @@
+.about {
+	&-title {
+		margin-bottom: 26px;
+	}
+}
+
+@media screen and (max-width: 1243px) {
+	.about {
+		&-title {
+			@include font(2rem, calc(26 / 20));
+			margin-bottom: 30px;
+		}
+	}
+}
