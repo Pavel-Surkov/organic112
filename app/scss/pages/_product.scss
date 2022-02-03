@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+	.product {
+		& .breadcrumbs-item {
+			&_last {
+				display: none;
+			}
+			&:nth-child(2) {
+				&::after {
+					content: none;
+				}
+				& a {
+					color: $gray-700;
+				}
+			}
+		}
+	}
+}

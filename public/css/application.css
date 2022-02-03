@@ -5032,38 +5032,16 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       width: 100%;
       margin-bottom: 14px; }
       .product-block__img-main img {
-        width: 100%;
-        -o-object-fit: contain;
-           object-fit: contain; }
-    .product-block__img-bottom {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -ms-flex-wrap: no-wrap;
-          flex-wrap: no-wrap; }
-    .product-block__img-small {
-      max-height: 78px;
-      max-width: 78px;
-      margin-right: 24px;
-      border: 1px solid #e5e0e0; }
-      .product-block__img-small:last-child {
-        margin-right: 0; }
-      .product-block__img-small img {
-        -o-object-fit: cover;
-           object-fit: cover;
-        max-width: 100%; }
-      .product-block__img-small_active {
-        border: 1px solid #018d3c; }
+        width: 100%; }
+      .product-block__img-main .swiper-pagination {
+        display: none; }
+  .product-block__thumb-wrapper {
+    max-width: 300px;
+    margin: 0 auto; }
+  .product-block__thumb-item {
+    border: 1px solid #e5e0e0; }
+  .product-block__thumb .swiper-slide-thumb-active .product-block__thumb-item {
+    border-color: #018d3c; }
   .product-block__info {
     width: calc((635 / 1170) * 100%);
     background: #faf7f7;
@@ -5086,6 +5064,51 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       line-height: calc(28 / 18); }
       .product-block__info p:last-child {
         margin-bottom: 0; }
+
+@media screen and (max-width: 991px) {
+  .product-main__wrapper {
+    padding: 22px 0;
+    padding-bottom: 33px; }
+  .product-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .product-block__img {
+      width: auto;
+      max-width: 550px;
+      margin: 0 auto;
+      margin-bottom: 27px; }
+      .product-block__img-main {
+        margin-bottom: 0; }
+    .product-block__info {
+      width: auto;
+      max-width: 100%; }
+      .product-block__info-title {
+        margin-bottom: 6px; }
+      .product-block__info-subtitle {
+        font-size: 1.3rem;
+        line-height: calc(20 / 13);
+        margin-bottom: 15px; }
+      .product-block__info p {
+        font-size: 1.3rem;
+        line-height: calc(20 / 13);
+        margin-bottom: 20px; }
+        .product-block__info p:last-child {
+          margin-bottom: 0; } }
+
+@media screen and (max-width: 767px) {
+  .product-block__thumb-wrapper {
+    display: none; }
+  .product-block__img {
+    max-width: 100%; }
+    .product-block__img-main .swiper-pagination {
+      display: block;
+      position: relative;
+      bottom: auto;
+      margin-top: 10px; }
+  .product-block__info {
+    padding: 31px 19px; } }
 
 .ingridients-wrapper {
   padding: 50px 0;
@@ -5134,7 +5157,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       margin-bottom: 0; } }
 
 .product-info .container {
-  padding: 50px 0;
+  padding: 50px 15px;
   border-top: 1px solid rgba(112, 112, 112, 0.3); }
 
 .product-info__title {
@@ -5151,7 +5174,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     margin-bottom: 0; }
 
 .product-additional .container {
-  padding: 45px 0;
+  padding: 45px 15px;
   padding-bottom: 48px;
   border-top: 1px solid rgba(112, 112, 112, 0.3); }
 
@@ -5604,3 +5627,11 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     font-size: 2rem;
     line-height: calc(26 / 20);
     margin-bottom: 30px; } }
+
+@media screen and (max-width: 767px) {
+  .product .breadcrumbs-item_last {
+    display: none; }
+  .product .breadcrumbs-item:nth-child(2)::after {
+    content: none; }
+  .product .breadcrumbs-item:nth-child(2) a {
+    color: #707070; } }

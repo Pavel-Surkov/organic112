@@ -98,7 +98,7 @@ $utilities: map-get-multiple(
 	'components/shops', 'components/m-menu', 'components/feedback', 'components/about-main', 'components/about-rules';
 
 // 6. Page-specific styles
-@import 'pages/home', 'pages/about';
+@import 'pages/home', 'pages/about', 'pages/product';
 
 // 7. Themes
 @import 'themes/default';

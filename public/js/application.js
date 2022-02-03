@@ -5701,6 +5701,26 @@ const initSwipers = () => {
 		}
 	};
 
+	const productThumbConfig = {
+		spaceBetween: 24,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+	};
+
+	const productThumbSwiper = new Swiper('.product-block__thumb', productThumbConfig);
+
+	const productMainConfig = {
+		spaceBetween: 10,
+		pagination: {
+			el: '.product-block__img-main .swiper-pagination'
+		},
+		thumbs: {
+			swiper: productThumbSwiper
+		}
+	};
+	const productMainSwiper = new Swiper('.product-block__img-main', productMainConfig);
+
 	const homeSwiper = new Swiper('.home-main__swiper', homeSwiperConfig);
 	const homeCatalogSwiper = new Swiper('.home-catalog__swiper', homeCatalogSwiperConfig);
 };
@@ -5714,40 +5734,40 @@ initSwipers();
 // to see that main image changes wheh buttons under it clicked.
 // *These images in buttons are the same in design
 
-const handleProductImg = () => {
-	const mainImg = document.querySelector('.product-block__img-main img');
-	const imageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
+// const handleProductImg = () => {
+// 	const mainImg = document.querySelector('.product-block__img-main img');
+// 	const imageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
 
-	if (!imageButtonsArr || !mainImg) {
-		return;
-	}
+// 	if (!imageButtonsArr || !mainImg) {
+// 		return;
+// 	}
 
-	function handleProductImgChange(e) {
-		const targetBtn = e.target.closest('.product-block__img-small');
-		const targetImg = e.target.closest('.product-block__img-small img');
-		const actualImageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
+// 	function handleProductImgChange(e) {
+// 		const targetBtn = e.target.closest('.product-block__img-small');
+// 		const targetImg = e.target.closest('.product-block__img-small img');
+// 		const actualImageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
 
-		const targetSrc = targetImg.src;
-		const targetSrcSet = targetImg.srcset;
+// 		const targetSrc = targetImg.src;
+// 		const targetSrcSet = targetImg.srcset;
 
-		actualImageButtonsArr.forEach(item => {
-			if (item.classList.contains('product-block__img-small_active')) {
-				item.classList.remove('product-block__img-small_active');
-			}
-		});
+// 		actualImageButtonsArr.forEach(item => {
+// 			if (item.classList.contains('product-block__img-small_active')) {
+// 				item.classList.remove('product-block__img-small_active');
+// 			}
+// 		});
 
-		targetBtn.classList.add('product-block__img-small_active');
+// 		targetBtn.classList.add('product-block__img-small_active');
 
-		mainImg.src = targetSrc;
-		mainImg.srcset = targetSrcSet;
-	}
+// 		mainImg.src = targetSrc;
+// 		mainImg.srcset = targetSrcSet;
+// 	}
 
-	imageButtonsArr.forEach(btn => btn.addEventListener('click', evt => handleProductImgChange(evt)));
+// 	imageButtonsArr.forEach(btn => btn.addEventListener('click', evt => handleProductImgChange(evt)));
 
-	console.log(imageButtonsArr);
-};
+// 	console.log(imageButtonsArr);
+// };
 
-handleProductImg();
+// handleProductImg();
 
 // Mobile menu handlers
 const handleMobileMenu = () => {
