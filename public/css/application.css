@@ -3611,11 +3611,12 @@ table {
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap; }
   .header-navigation__item {
-    margin-right: 40px;
-    font-size: 1.8rem;
-    line-height: calc(20 / 18);
-    font-weight: 600;
-    letter-spacing: 0.03em; }
+    margin-right: 40px; }
+    .header-navigation__item a {
+      font-size: 1.8rem;
+      line-height: calc(20 / 18);
+      font-weight: 600;
+      letter-spacing: 0.03em; }
     .header-navigation__item:last-child {
       margin-right: 0; }
     .header-navigation__item_active a {

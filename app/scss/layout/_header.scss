@@ -16,9 +16,11 @@
 		}
 		&__item {
 			margin-right: 40px;
-			@include font(1.8rem, calc(20 / 18));
-			font-weight: 600;
-			letter-spacing: 0.03em;
+			& a {
+				@include font(1.8rem, calc(20 / 18));
+				font-weight: 600;
+				letter-spacing: 0.03em;
+			}
 			&:last-child {
 				margin-right: 0;
 			}
