@@ -28,10 +28,10 @@
 				@include font(1.8rem, calc(23 / 18));
 			}
 			&-m {
-				@include font(1.8rem, calc(26 / 18));
+				@include font(2rem, calc(26 / 20));
 			}
 			&-s {
-				@include font(2.8rem, calc(40 / 28));
+				@include font(1.8rem, calc(26 / 18));
 			}
 		}
 		&_item {

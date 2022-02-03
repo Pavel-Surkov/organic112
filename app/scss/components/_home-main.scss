@@ -97,8 +97,9 @@
 			overflow: hidden;
 			&-first {
 				& img:first-child {
-					height: calc(100% + 20px);
-					top: -20px;
+					height: 100%;
+					max-width: none;
+					width: calc(100% + 18px);
 				}
 			}
 		}

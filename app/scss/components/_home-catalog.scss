@@ -47,6 +47,9 @@
 		&__wrapper {
 			padding-top: 23px;
 		}
+		&__title {
+			@include font(1.8rem, calc(26 / 18));
+		}
 		&__btn {
 			padding-right: 2.8em;
 			padding-left: 2.8em;

@@ -4550,11 +4550,11 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     font-size: 1.8rem;
     line-height: calc(23 / 18); }
   .title_size-m {
+    font-size: 2rem;
+    line-height: calc(26 / 20); }
+  .title_size-s {
     font-size: 1.8rem;
     line-height: calc(26 / 18); }
-  .title_size-s {
-    font-size: 2.8rem;
-    line-height: calc(40 / 28); }
   .title_item {
     font-size: 1.3rem;
     line-height: calc(19 / 13); } }
@@ -4663,8 +4663,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   .home-main__slide {
     overflow: hidden; }
     .home-main__slide-first img:first-child {
-      height: calc(100% + 20px);
-      top: -20px; } }
+      height: 100%;
+      max-width: none;
+      width: calc(100% + 18px); } }
 
 .slide-text {
   position: relative; }
@@ -4800,6 +4801,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     margin-bottom: 12px; }
   .home-catalog__wrapper {
     padding-top: 23px; }
+  .home-catalog__title {
+    font-size: 1.8rem;
+    line-height: calc(26 / 18); }
   .home-catalog__btn {
     padding-right: 2.8em;
     padding-left: 2.8em; }
@@ -5286,10 +5290,37 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   margin-top: 50px; }
 
 .contacts-map__wrapper {
-  max-height: 550px; }
+  height: 550px; }
 
-.contacts-map iframe {
-  border: none; }
+@media screen and (max-width: 991px) {
+  .contacts-block__title {
+    margin-bottom: 16px; }
+  .contacts-info__wrapper {
+    padding-bottom: 40px; }
+  .contacts-info__block {
+    margin-bottom: 40px; }
+    .contacts-info__block p {
+      margin-bottom: 20px; }
+      .contacts-info__block p:last-child {
+        margin-bottom: 0; }
+    .contacts-info__block a {
+      font-size: 1.6rem;
+      line-height: calc(24 / 16); } }
+
+@media screen and (max-width: 991px) {
+  .contacts-info__block p,
+  .contacts-info__block a {
+    font-size: 1.3rem;
+    line-height: calc(20 / 13); }
+  .contacts-form__item {
+    font-size: 1.3rem;
+    line-height: calc(20 / 13); }
+    .contacts-form__item:first-child {
+      margin-top: 0; }
+  .contacts-form__submit {
+    margin-top: 36px; }
+  .contacts-map__wrapper {
+    height: 400px; } }
 
 .shops-wrapper {
   padding: 8px 0;
