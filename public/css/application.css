@@ -5593,7 +5593,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
   display: none;
-  border: 10px solid #fff; }
+  border: 10px solid #fff;
+  -webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16); }
   .feedback-modal_open {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5845,7 +5847,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
           align-items: flex-start;
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
-  display: none; }
+  display: none;
+  -webkit-box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.16); }
   .subscription_open {
     display: -webkit-box;
     display: -ms-flexbox;
