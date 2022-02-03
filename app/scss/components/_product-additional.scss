@@ -12,3 +12,28 @@
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.product-additional {
+		& .container {
+			padding: 0;
+			border: none;
+		}
+		&__block {
+			padding: 22px 0;
+			padding-bottom: 33px;
+			border-top: 1px solid rgba($gray-700, 0.3);
+			& p {
+				@include font(1.2rem, calc(18 / 12));
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.product-additional {
+		& .container {
+			padding: 0 15px;
+		}
+	}
+}

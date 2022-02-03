@@ -31,12 +31,37 @@
 @media screen and (max-width: 991px) {
 	.ingridients {
 		&-wrapper {
+			padding: 0;
+			padding-bottom: 35px;
 			& .col-12,
 			& .col-12:nth-last-child(2) {
-				margin-bottom: 48px;
+				margin-bottom: 36px;
 				&:last-child {
 					margin-bottom: 0;
 				}
+			}
+		}
+		&-title {
+			margin-bottom: 25px;
+			@include font(1.8rem, calc(28 / 18));
+		}
+		&-item {
+			& img {
+				margin-right: 20px;
+				max-height: 75px;
+			}
+			& p {
+				max-width: 500px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.ingridients {
+		&-item {
+			& p {
+				@include font(1.2rem, calc(18 / 12));
 			}
 		}
 	}
