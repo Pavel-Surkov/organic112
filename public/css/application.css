@@ -5831,7 +5831,6 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   padding: 50px 26px;
   padding-top: 18px;
   color: #fff;
-  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
