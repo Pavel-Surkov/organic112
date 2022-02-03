@@ -1,0 +1,92 @@
+.subscription {
+	width: calc(100% - 30px);
+	max-width: 310px;
+	min-height: 410px;
+	position: fixed;
+	z-index: 100;
+	background: $green-600;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%);
+	padding: 50px 26px;
+	padding-top: 18px;
+	color: $white;
+	overflow: scroll;
+	@include flex(column);
+	display: none;
+	&_open {
+		display: flex;
+	}
+	& .subscription-close {
+		width: 19px;
+		height: 19px;
+		position: relative;
+		margin-left: auto;
+		& span {
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: $white;
+			&:first-child {
+				top: 0;
+				transform: translateX(-10px) translateY(9px) rotate(45deg);
+			}
+			&:last-child {
+				bottom: 0;
+				transform: translateX(-10px) translateY(-9px) rotate(-45deg);
+			}
+		}
+	}
+	&-title {
+		margin-top: 14px;
+		@include font(2.4rem, calc(30 / 24));
+		color: $white;
+	}
+	&-subtitle {
+		font-family: $links-font;
+		margin-top: 9px;
+		@include font(1.6rem, calc(22 / 16));
+	}
+	&-form {
+		margin-top: 26px;
+		&__input {
+			background: $white;
+			padding: 13px 16px 11px 16px;
+			@include font(1.6rem, calc(24 / 16));
+			width: 100%;
+			font-family: $links-font;
+			margin-top: 22px;
+			&:first-child {
+				margin-top: 0;
+			}
+			&::placeholder {
+				color: $gray-700;
+			}
+		}
+		&__submit {
+			letter-spacing: 0;
+			text-transform: none;
+			width: 100%;
+			color: $white;
+			padding: 0.857em 1em;
+			margin-top: 26px;
+			border-color: $white;
+			background-color: transparent;
+			font-weight: 400;
+			@include font(1.6rem, calc(24 / 16));
+			&:hover {
+				background-color: $white;
+				color: $dark-300;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.subscription {
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: calc(100% - 30px);
+		max-width: 310px;
+	}
+}

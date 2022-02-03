@@ -10,3 +10,17 @@
 .logo {
 	display: flex;
 }
+
+.blocker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba($black, 0.3);
+	z-index: 90;
+	display: none;
+	&_open {
+		display: block;
+	}
+}

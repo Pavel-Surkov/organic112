@@ -5719,6 +5719,7 @@ const initSwipers = () => {
 			swiper: productThumbSwiper
 		}
 	};
+
 	const productMainSwiper = new Swiper('.product-block__img-main', productMainConfig);
 
 	const homeSwiper = new Swiper('.home-main__swiper', homeSwiperConfig);
@@ -5726,48 +5727,6 @@ const initSwipers = () => {
 };
 
 initSwipers();
-
-// Product change main image handler
-// If you don't need this handler, delete / comment out the code below until the next comment
-
-// I added different images to buttons under main image
-// to see that main image changes wheh buttons under it clicked.
-// *These images in buttons are the same in design
-
-// const handleProductImg = () => {
-// 	const mainImg = document.querySelector('.product-block__img-main img');
-// 	const imageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
-
-// 	if (!imageButtonsArr || !mainImg) {
-// 		return;
-// 	}
-
-// 	function handleProductImgChange(e) {
-// 		const targetBtn = e.target.closest('.product-block__img-small');
-// 		const targetImg = e.target.closest('.product-block__img-small img');
-// 		const actualImageButtonsArr = Array.from(document.querySelectorAll('.product-block__img-small'));
-
-// 		const targetSrc = targetImg.src;
-// 		const targetSrcSet = targetImg.srcset;
-
-// 		actualImageButtonsArr.forEach(item => {
-// 			if (item.classList.contains('product-block__img-small_active')) {
-// 				item.classList.remove('product-block__img-small_active');
-// 			}
-// 		});
-
-// 		targetBtn.classList.add('product-block__img-small_active');
-
-// 		mainImg.src = targetSrc;
-// 		mainImg.srcset = targetSrcSet;
-// 	}
-
-// 	imageButtonsArr.forEach(btn => btn.addEventListener('click', evt => handleProductImgChange(evt)));
-
-// 	console.log(imageButtonsArr);
-// };
-
-// handleProductImg();
 
 // Mobile menu handlers
 const handleMobileMenu = () => {
@@ -5802,7 +5761,88 @@ const handleMobileMenu = () => {
 
 handleMobileMenu();
 
+// Subscription modal
+const subscriptionModalInit = () => {
+	const modal = document.querySelector('#subscription');
+	const blocker = document.querySelector('#blocker');
+	const htmlEl = document.documentElement;
+
+	if (modal && !modal.classList.contains('subscription_open')) {
+		modal.classList.add('subscription_open');
+		blocker.classList.add('blocker_open');
+		htmlEl.classList.add('is-locked');
+	}
+}
+
+const subscriptionCloseHandle = () => {
+	const closeSubscriptionBtn = document.querySelector('.subscription-close');
+
+	const closeSubscriptionModal = () => {
+		const modal = document.querySelector('#subscription');
+		const blocker = document.querySelector('#blocker');
+		const htmlEl = document.documentElement;
+
+		if (modal && modal.classList.contains('subscription_open')) {
+			modal.classList.remove('subscription_open');
+			blocker.classList.remove('blocker_open');
+			htmlEl.classList.remove('is-locked');
+		}
+	}
+
+	if (closeSubscriptionBtn) {
+		closeSubscriptionBtn.addEventListener('click', closeSubscriptionModal)
+	}
+}
+
+subscriptionCloseHandle();
+
+// Feedback modal
+const feedbackOpenHandle = () => {
+	const feedbackItems = Array.from(document.querySelectorAll('.feedback-item'));
+
+	const feedbackModalOpen = () => {
+		const modal = document.querySelector('#feedback-modal');
+		const blocker = document.querySelector('#blocker');
+		const htmlEl = document.documentElement;
+	
+		if (modal && !modal.classList.contains('feedback-modal_open')) {
+			modal.classList.add('feedback-modal_open');
+			blocker.classList.add('blocker_open');
+			htmlEl.classList.add('is-locked');
+		}
+	}
+
+	if (feedbackItems) {
+		feedbackItems.forEach(item => item.addEventListener('click', feedbackModalOpen));
+	}
+}
+
+const feedbackCloseHandle = () => {
+	const closeFeedbackBtn = document.querySelector('.feedback-modal-close');
+
+	const closeFeedbackModal = () => {
+		const modal = document.querySelector('#feedback-modal');
+		const blocker = document.querySelector('#blocker');
+		const htmlEl = document.documentElement;
+
+		if (modal && modal.classList.contains('feedback-modal_open')) {
+			modal.classList.remove('feedback-modal_open');
+			blocker.classList.remove('blocker_open');
+			htmlEl.classList.remove('is-locked');
+		}
+	}
+
+	if (closeFeedbackBtn) {
+		closeFeedbackBtn.addEventListener('click', closeFeedbackModal)
+	}
+}
+
+feedbackOpenHandle();
+feedbackCloseHandle();
+
 // Functions after page load
-document.addEventListener(`DOMContentLoaded`, () => {});
+document.addEventListener(`DOMContentLoaded`, () => {
+	subscriptionModalInit();
+});
 
 // JQUERY
