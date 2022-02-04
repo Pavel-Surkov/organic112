@@ -3,7 +3,7 @@
 	font-family: $links-font;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
-	@include font(1.5rem, calc(26 / 15));
+	@include font(1.6rem, calc(26 / 15));
 	font-weight: 600;
 	color: $dark-300;
 	border: 2px solid $red-300;

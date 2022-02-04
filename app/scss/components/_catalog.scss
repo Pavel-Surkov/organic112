@@ -5,6 +5,9 @@
 		& .catalog-item {
 			padding-top: 10px;
 		}
+		&__col {
+			margin-bottom: 65px;
+		}
 	}
 	&-title {
 		margin-bottom: 36px;
@@ -43,6 +46,7 @@
 		}
 		&__title {
 			margin-bottom: 2px;
+			font-weight: 600;
 		}
 	}
 }
@@ -59,7 +63,7 @@
 				}
 			}
 		}
-		& .col-12 {
+		& .col-6 {
 			margin-bottom: 36px;
 			&:nth-last-child(2),
 			&:nth-last-child(3) {

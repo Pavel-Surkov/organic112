@@ -3401,7 +3401,7 @@ strong {
   font-weight: bold; }
 
 body {
-  font-family: "SourceSerifPro", serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 400;
   color: #333;
   font-size: 1.6rem;
@@ -3412,7 +3412,7 @@ a {
   text-decoration: none; }
 
 button, select, input, textarea {
-  font-family: "SourceSerifPro", serif;
+  font-family: "Source Serif Pro", serif;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3476,72 +3476,72 @@ table {
   color: transparent; }
 
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
   src: url("../fonts/SourceSansPro-Light.woff2") format("woff2"), url("../fonts/SourceSansPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSansPro';
-  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/SourceSerifPro-Regular.woff2") format("woff2"), url("../fonts/SourceSerifPro-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/SourceSerifPro-It.woff2") format("woff2"), url("../fonts/SourceSerifPro-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
   src: url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSansPro-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSansPro';
-  src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"), url("../fonts/SourceSansPro-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/SourceSerifPro-LightIt.woff2") format("woff2"), url("../fonts/SourceSerifPro-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSerifPro';
+  font-family: 'Source Serif Pro';
   src: url("../fonts/SourceSerifPro-Light.woff2") format("woff2"), url("../fonts/SourceSerifPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSerifPro';
-  src: url("../fonts/SourceSerifPro-LightItalic.woff2") format("woff2"), url("../fonts/SourceSerifPro-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'SourceSerifPro';
-  src: url("../fonts/SourceSerifPro-Regular.woff2") format("woff2"), url("../fonts/SourceSerifPro-Regular.woff") format("woff");
-  font-weight: 400;
+  font-family: 'Source Serif Pro';
+  src: url("../fonts/SourceSerifPro-Bold.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSerifPro';
-  src: url("../fonts/SourceSerifPro-Italic.woff2") format("woff2"), url("../fonts/SourceSerifPro-Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
+  font-family: 'Source Sans Pro';
+  src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../fonts/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'SourceSerifPro';
+  font-family: 'Source Serif Pro';
   src: url("../fonts/SourceSerifPro-SemiBold.woff2") format("woff2"), url("../fonts/SourceSerifPro-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'SourceSerifPro';
-  src: url("../fonts/SourceSerifPro-Bold.woff2") format("woff2"), url("../fonts/SourceSerifPro-Bold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
   font-display: swap; }
 
@@ -3657,7 +3657,7 @@ table {
     content: none; } }
 
 .footer {
-  font-family: "SourceSansPro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
   .footer-wrapper {
     padding-top: 50px;
     padding-bottom: 58px;
@@ -4511,10 +4511,10 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .btn {
   display: inline-block;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: calc(26 / 15);
   font-weight: 600;
   color: #333;
@@ -4552,7 +4552,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     font-size: 2.8rem;
     line-height: calc(40 / 28); }
   .title_item {
-    font-family: "SourceSerifPro", serif;
+    font-family: "Source Serif Pro", serif;
     text-align: center;
     font-size: 1.8rem;
     line-height: calc(26 / 18); }
@@ -4572,7 +4572,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     line-height: calc(19 / 13); } }
 
 .link {
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: calc(20 / 16);
   text-decoration: none;
@@ -4581,7 +4581,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     opacity: 0.8; }
   .link-green {
     color: #018d3c;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.6rem;
     line-height: calc(24 / 16);
     text-decoration: none; }
@@ -4589,7 +4589,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       opacity: 0.8; }
   .link-arrow {
     display: inline-block;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     position: relative;
     padding-right: 38px;
     font-size: 1.6rem;
@@ -4850,7 +4850,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     max-width: 454px;
     margin-bottom: 15px; }
   .secrets-text p {
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     margin: 0;
     font-size: 1.8rem;
     line-height: calc(28 / 18);
@@ -4903,7 +4903,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .breadcrumbs {
   padding-top: 33px;
-  font-family: "SourceSansPro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif; }
   .breadcrumbs-item::after {
     content: '|';
     color: #707070; }
@@ -4933,6 +4933,8 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   padding-bottom: 50px; }
   .catalog-wrapper .catalog-item {
     padding-top: 10px; }
+  .catalog-wrapper__col {
+    margin-bottom: 65px; }
 
 .catalog-title {
   margin-bottom: 36px; }
@@ -4968,7 +4970,8 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
   color: #666; }
 
 .catalog-item__title {
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  font-weight: 600; }
 
 @media screen and (max-width: 991px) {
   .catalog-item p {
@@ -4976,11 +4979,11 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     line-height: calc(18 / 12); }
   .catalog-item__link img {
     margin-bottom: 13px; }
-  .catalog .col-12 {
+  .catalog .col-6 {
     margin-bottom: 36px; }
-    .catalog .col-12:nth-last-child(2), .catalog .col-12:nth-last-child(3) {
+    .catalog .col-6:nth-last-child(2), .catalog .col-6:nth-last-child(3) {
       margin-bottom: 36px; }
-    .catalog .col-12:last-child {
+    .catalog .col-6:last-child {
       margin-bottom: 0; } }
 
 .fast-help {
@@ -4997,7 +5000,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     margin-bottom: 12px; }
   .fast-help p {
     margin: 0;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.8rem;
     line-height: calc(28 / 18);
     color: #444; }
@@ -5072,7 +5075,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       line-height: calc(28 / 18);
       color: #666; }
     .product-block__info p {
-      font-family: "SourceSansPro", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       color: #333;
       margin: 0;
       margin-bottom: 30px;
@@ -5158,7 +5161,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
         flex-shrink: 0;
     margin-right: 26px; }
   .ingridients-item p {
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 1.6rem;
     line-height: calc(24 / 16);
     margin: 0;
@@ -5198,7 +5201,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .product-info__block p {
   max-width: 528px;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: calc(24 / 16);
   margin: 0;
@@ -5237,7 +5240,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .product-additional__block p {
   margin: 0;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: calc(24 / 16); }
 
@@ -5263,7 +5266,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 
 .contacts-info__block p {
   max-width: 360px;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8rem;
   line-height: calc(28 / 18);
   margin: 0;
@@ -5277,7 +5280,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 .contacts-form__item {
   display: block;
   width: 100%;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #333;
   font-size: 1.8rem;
   line-height: calc(30 / 18);
@@ -5397,7 +5400,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       -ms-transform: translateX(100%);
           transform: translateX(100%);
   background: #faf7f7;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   overflow: scroll; }
   .m-menu_open {
     -webkit-transform: none;
@@ -5545,12 +5548,12 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     opacity: 0.75; }
   .feedback-item__title {
     font-weight: 700;
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     text-align: left;
     font-size: 1.8rem;
     line-height: calc(28 / 18); }
   .feedback-item__city {
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     display: inline-block;
     font-size: 1.8rem;
     line-height: calc(28 / 18);
@@ -5791,7 +5794,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
 .about-rules__item p {
   margin: 0;
   color: #707070;
-  font-family: "SourceSansPro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: calc(24 / 16); }
 
@@ -5880,7 +5883,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     line-height: calc(30 / 24);
     color: #fff; }
   .subscription-subtitle {
-    font-family: "SourceSansPro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     margin-top: 9px;
     font-size: 1.6rem;
     line-height: calc(22 / 16); }
@@ -5892,7 +5895,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       font-size: 1.6rem;
       line-height: calc(24 / 16);
       width: 100%;
-      font-family: "SourceSansPro", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       margin-top: 22px; }
       .subscription-form__input:first-child {
         margin-top: 0; }
