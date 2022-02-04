@@ -61,7 +61,7 @@
 	.ingridients {
 		&-item {
 			& p {
-				@include font(1.2rem, calc(18 / 12));
+				@include font(1.3rem, calc(18 / 12));
 			}
 		}
 	}

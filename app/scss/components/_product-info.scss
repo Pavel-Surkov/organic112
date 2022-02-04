@@ -35,7 +35,7 @@
 			padding-bottom: 24px;
 			border-top: 1px solid rgba($gray-700, 0.3);
 			& p {
-				@include font(1.2rem, calc(18 / 12));
+				@include font(1.3rem, calc(18 / 12));
 				max-width: none;
 				margin-bottom: 18px;
 				&:last-child {
