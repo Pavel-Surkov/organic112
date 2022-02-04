@@ -5652,7 +5652,6 @@
 	];
 	return H.use(J), H;
 });
-//# sourceMappingURL=swiper-bundle.min.js.map
 
 'use strict';
 
