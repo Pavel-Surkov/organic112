@@ -5477,7 +5477,7 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
       margin: 0;
       list-style: none; }
     .m-menu__navigation-item {
-      text-align: right;
+      text-align: left;
       margin-bottom: 20px; }
       .m-menu__navigation-item:last-child {
         margin-bottom: 0; }
@@ -5501,9 +5501,9 @@ button.swiper-pagination-bullet, select.swiper-pagination-bullet, input.swiper-p
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap; }
     .m-menu__contacts a {
