@@ -4,7 +4,7 @@
 	color: $dark-300;
 	&_size {
 		&-l {
-			@include font(4rem, calc(50 / 40));
+			@include font(3.7rem, calc(50 / 40));
 		}
 		&-m {
 			@include font(3.2rem, calc(44 / 32));
@@ -37,6 +37,11 @@
 		&_item {
 			font-size: 1.3rem;
 			line-height: calc(19 / 13);
+		}
+	}
+	.slide-text {
+		&__title {
+			font-size: 1.6rem;
 		}
 	}
 }

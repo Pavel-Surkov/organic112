@@ -3,17 +3,13 @@
 // Swipers
 const initSwipers = () => {
 	const homeSwiperConfig = {
-		spaceBetween: 20,
 		autoplay: {
 			delay: 3500
 		},
 		pagination: {
-			el: '.home-main__swiper .swiper-pagination'
-		},
-		breakpoints: {
-			577: {
-				spaceBetween: 0
-			}
+			el: '.home-main__swiper + .swiper-pagination',
+			type: 'bullets',
+			clickable: true
 		}
 	};
 
