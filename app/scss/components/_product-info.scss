@@ -1,7 +1,18 @@
 .product-info {
 	& .container {
-		padding: 50px 0;
-		border-top: 1px solid rgba($gray-700, 0.3);
+		position: relative;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		// border-top: 1px solid rgba($gray-700, 0.3);
+		&::before {
+			content: '';
+			position: absolute;
+			width: calc(100% - 30px);
+			bottom: 100%;
+			left: 15px;
+			background: rgba($gray-700, .3);
+			height: 1px;
+		}
 	}
 	&__title {
 		margin-bottom: 15px;
@@ -23,8 +34,11 @@
 @media screen and (max-width: 991px) {
 	.product-info {
 		& .container {
-			padding: 0;
-			border: none;
+			padding-top: 0;
+			padding-bottom: 0;
+			&::before {
+				content: none;
+			}
 		}
 		&__title {
 			margin-bottom: 10px;
@@ -49,7 +63,7 @@
 @media screen and (max-width: 576px) {
 	.product-info {
 		& .container {
-			padding: 0 15px;
+			// padding: 0 15px;
 		}
 	}
 }

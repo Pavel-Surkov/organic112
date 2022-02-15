@@ -1,5 +1,6 @@
 .header {
 	background: $white;
+	z-index: 15;
 	&-wrapper {
 		padding: 25px 0;
 		padding-bottom: 29px;
@@ -44,7 +45,6 @@
 		position: fixed;
 		top: 0;
 		width: 100vw;
-		z-index: 10;
 		&-wrapper {
 			padding: 15px 0;
 			padding-bottom: 19px;

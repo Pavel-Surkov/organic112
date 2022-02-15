@@ -29,6 +29,9 @@
 			}
 			&-item {
 				border: 1px solid $light-500;
+				& img {
+					cursor: pointer;
+				}
 			}
 			& .swiper-slide-thumb-active {
 				& .product-block__thumb-item {
